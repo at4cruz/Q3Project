@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title> Q3 Project </title>
+  <style type="text/css">
+    form{
+      color: whitesmoke;
+    }
+    h2{
+      color: whitesmoke;
+    }
+    p{
+      color: whitesmoke;
+    }
+    td{
+      color: whitesmoke;
+    }
+    th{
+      color: whitesmoke;
+    }
+</style>
+</head>
+<body style="background-image: url(data:image/jpeg;base64,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);">
+  <nav class="navbar navbar-expand-mg bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Ang Lungkot-ko Fire Department</a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collape" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About Us</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="#tips">Prevention Tips</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <header class="jumbotron bg-dark">
+    <h1 class="display-4 bg-warning">How To Protect You And Your Loved Ones From Fire!</h1>
+  </header>
+  <main class="container">
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>Welcome to our website about fire prevention. Our mission is to educate and inform people about the dangers of fire and how to prevent them.</p>
+      <p>Here you will find valuable information about fire prevention, safety tips, and other resources to help you stay safe.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We are a group of fire safety experts dedicated to educating people about fire prevention. Our team has years of experience in the field and is committed to making a difference in our communities.</p>
+      <p>If you have any questions or suggestions, please feel free to contact us.</p>
+    </section>
+
+    <section id="tips">
+      <h2>Prevention Tips</h2>
+      <p>Here Are Some Tips To Telp Prevent Fires!</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Tips & Tricks</th>
+            <th>How To Do The Tip</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Install Smoke Detectors</td>
+            <td>Smoke detectors can alert you to a fire before it's too late. Make sure to install smoke detectors on every floor of your home.</td>
+          </tr>
+          <tr>
+            <td>Keep Flammable Materials Away</td>
+            <td>Keep flammable materials such as curtains, paper, and cleaning supplies away from heat sources.</td>
+          </tr>
+          <tr>
+            <td>Don't Overload Electrical Outlets</td>
+            <td>Don't overload electrical outlets and make sure to unplug appliances that aren't being used.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  </div>
+  <center>
+  <h2>Contact Us!</h2>
+</center>
+<form>
+    <div class="form-group" id="contact">
+    <label for="formGroupExampleInput">Name: </label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+  </div>
+  <div class="form-group" id="contact">
+    <label for="formGroupExampleInput">Email Address: </label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+  </div>
+    <div class="form-group" id="contact">
+    <label for="formGroupExampleInput">Phone Number: </label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+  </div>
+  <div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Your Question/Suggestion:</span>
+  </div>
+  <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>
+<br>
+<center>
+<button type="submit" class="btn btn-secondary btn-lg">Submit</button>
+</center>
+</form>
+</div>
+</body>
+</html>
